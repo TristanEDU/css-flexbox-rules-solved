@@ -12,6 +12,13 @@ body {
 
 .content {
   padding: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.form-header {
+  gap: 6px;
 }
 
 h2 {
@@ -37,6 +44,35 @@ form {
 #sign-in,
 #sign-up {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#sign-in-form,
+#sign-up-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  gap: 30px;
+}
+
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 a {
@@ -46,6 +82,10 @@ a {
 
 label {
   font-weight: bold;
+}
+
+.radio {
+  font-weight: normal;
 }
 
 input {

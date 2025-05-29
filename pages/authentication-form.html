@@ -45,12 +45,13 @@
               id="password-field"
               placeholder="passwords must match"
               minlength="8"
+              maxlength="20"
               required
             />
           </div>
           <div class="form-checkbox-control">
             <input type="checkbox" id="stay-signed-in" />
-            <label for="stay-signed-in">Stay signed in</label>
+            <label class="radio" for="stay-signed-in">Stay signed in</label>
           </div>
           <hr />
           <div class="form-submit-control">
@@ -116,6 +117,8 @@
               minlength="12"
               maxlength="12"
               placeholder="ex.: +12336456355"
+              pattern="^\+\d{11}$"
+              required
             />
           </div>
           <div class="form-input-control">
@@ -147,11 +150,11 @@
             <div class="form-group-vertical-control">
               <div class="form-radio-control">
                 <input type="radio" id="male" name="gender" value="male" />
-                <label for="male">Male</label>
+                <label class="radio" for="male">Male</label>
               </div>
               <div class="form-radio-control">
                 <input type="radio" id="female" name="gender" value="female" />
-                <label for="female">Female</label>
+                <label class="radio" for="female">Female</label>
               </div>
               <div class="form-radio-control">
                 <input
@@ -161,7 +164,7 @@
                   value="other"
                   checked
                 />
-                <label for="other">Other</label>
+                <label class="radio" for="other">Other</label>
               </div>
             </div>
           </div>
